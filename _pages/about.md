@@ -8,13 +8,13 @@ redirect_from:
   - /about.html
 ---
 
-I am currently a junior undergraduate student in Shandong University, majoring in software engineering. I joined IDEA Group led by professor Guo-Xian Yu in my sophomore year. I focus on data mining and machine learning, especially, the problems of multi-modal learning in practical applications such as long-tail, zero-shot and so on. If interested, feel free to email me at **zjgao@mail.sdu.edu.cn** to let me work with you as a PhD.
+I am currently a junior undergraduate student in **Shandong University**, majoring in software engineering. I joined IDEA Group led by professor Guo-Xian Yu in my sophomore year. I focus on data mining and machine learning, especially, the problems of multi-modal learning in practical applications such as long-tail, zero-shot and so on. If interested, feel free to email me at **zjgao@mail.sdu.edu.cn** to let me work with you as a PhD.
 
 I won the **National Scholarship** in 2021 and won the first-class scholarship for academic studies and the first-class scholarship for entrepreneurship and so on.
 
 😀 News
 ======
-- 2022.11: **My first academic paper as the first author *"Long-tail Cross Modal Hashing"* has been accepted by AAAI 2023!**
+- 2022.11: **My first academic paper as the first author *"Long-tail Cross Modal Hashing"* has been accepted by AAAI (CCF A) 2023!**
 
 📑 Publications
 ======
