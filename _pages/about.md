@@ -18,8 +18,8 @@ I won the **National Scholarship** in 2021 and won the first-class scholarship f
 
 📑 Publications
 ======
-- Long-tail Cross Modal Hashing, 37th AAAI Conference on Artificial Intelligence (AAAI) (CCF A), In Print. See [代码详情 | IDEA (sdu-idea.cn)](https://www.sdu-idea.cn/codes.php?name=LtCMH) for more details.
+- Long-tail Cross Modal Hashing, 37th AAAI Conference on Artificial Intelligence (AAAI) (CCF A), In Print. See [https://www.sdu-idea.cn/codes.php?name=LtCMH] for more details.
 
 📪 For more info
 ------
-More information about me, please contact me by email zjgao@mail.sdu.edu.cn or 1505943390@qq.com.
+More information about me, please contact me by email **zjgao@mail.sdu.edu.cn** or **1505943390@qq.com**.
