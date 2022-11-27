@@ -11,9 +11,9 @@ title                    : "Welcome to Zijun Gao's home page~"
 title_separator          : "-"
 name                     : &name "Zijun Gao"
 description              : &description "It's my acadamic page."
-url                      : https://zjgao.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+url                      : https://zjgao02.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
-repository               : "zjgao02/zjgao.github.io"
+repository               : "zjgao02/zjgao02.github.io"
 teaser                   :  # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
 breadcrumbs              : false # true, false (default)
 words_per_minute         : 160
