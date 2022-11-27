@@ -1,6 +1,6 @@
 ---
 permalink: /
-title: "Zijun Gao(高子俊)-Homepage"
+title: "Zijun Gao(高子俊)-Brief self-introduction"
 excerpt: "About me"
 author_profile: true
 redirect_from: 
@@ -8,7 +8,9 @@ redirect_from:
   - /about.html
 ---
 
-This is the front page of a website that is powered by the [academicpages template](https://github.com/academicpages/academicpages.github.io) and hosted on GitHub pages. [GitHub pages](https://pages.github.com) is a free service in which websites are built and hosted from code and data stored in a GitHub repository, automatically updating when a new commit is made to the respository. This template was forked from the [Minimal Mistakes Jekyll Theme](https://mmistakes.github.io/minimal-mistakes/) created by Michael Rose, and then extended to support the kinds of content that academics have: publications, talks, teaching, a portfolio, blog posts, and a dynamically-generated CV. You can fork [this repository](https://github.com/academicpages/academicpages.github.io) right now, modify the configuration and markdown files, add your own PDFs and other content, and have your own site for free, with no ads! An older version of this template powers my own personal website at [stuartgeiger.com](http://stuartgeiger.com), which uses [this Github repository](https://github.com/staeiou/staeiou.github.io).
+I am currently a junior undergraduate student in Shandong University, majoring in software engineering. I joined IDEA Group led by professor Guo-Xian Yu in my sophomore year. I focus on data mining and machine learning, especially, the problems of multi-modal learning in practical applications such as long-tail, zero-shot and so on. If interested, feel free to email me at zjgao@mail.sdu.edu.cn to let me work with you as a PhD.
+
+I won the National Scholarship in 2021 and won the first-class scholarship for academic studies and the first-class scholarship for entrepreneurship and so on.
 
 A data-driven personal website
 ======
