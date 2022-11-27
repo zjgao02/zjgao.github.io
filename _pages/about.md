@@ -12,14 +12,14 @@ I am currently a junior undergraduate student in Shandong University, majoring i
 
 I won the **National Scholarship** in 2021 and won the first-class scholarship for academic studies and the first-class scholarship for entrepreneurship and so on.
 
-:grinning: News
+😀 News
 ======
 - 2022.11: **My first academic paper as the first author *"Long-tail Cross Modal Hashing"* has been accepted by AAAI 2023!**
 
-:book: Publications
+📑 Publications
 ======
 - Long-tail Cross Modal Hashing, 37th AAAI Conference on Artificial Intelligence (AAAI) (CCF A), In Print. See [代码详情 | IDEA (sdu-idea.cn)](https://www.sdu-idea.cn/codes.php?name=LtCMH) for more details.
 
-:pen: For more info
+📪 For more info
 ------
 More information about me, please contact me by email zjgao@mail.sdu.edu.cn or 1505943390@qq.com.
