@@ -1,6 +1,6 @@
 ---
 permalink: /
-title: "Zijun Gao(高子俊)-Brief self-introduction"
+title: "😎Zijun Gao(高子俊)-Brief self-introduction"
 excerpt: "About me"
 author_profile: true
 redirect_from: 
