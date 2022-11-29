@@ -10,6 +10,6 @@ citation: ''
 ---
 Congratulations to myself! It is my first academic paper as the first author. It was submitted to AAAI in the summer vacation of my sophomore year and has been accepted.
 
-[Download paper here](http://academicpages.github.io/files/paper3.pdf)
+[Download paper here](http://academicpages.github.io/files/2211.15162.pdf)
 
 Recommended citation: .
