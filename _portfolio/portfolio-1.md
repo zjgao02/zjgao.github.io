@@ -4,4 +4,4 @@ excerpt: "It's an introduction video to the paper presented at the AAAI-23 Confe
 collection: portfolio
 ---
 
-This is an item in your portfolio. It can be have images or nice text. If you name the file .md, it will be parsed as markdown. If you name the file .html, it will be parsed as HTML. 
+[Watch this video to get a better idea of this paper.](http://zjgao02.github.io/files/AAAI演讲.mp4)
