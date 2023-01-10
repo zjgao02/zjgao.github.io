@@ -1,6 +1,6 @@
 ---
-title: "Portfolio item number 1"
-excerpt: "Short description of portfolio item number 1<br/><img src='/images/AAAI海报.png'>"
+title: "Long-tail Cross Modal Hashing"
+excerpt: "It's an introduction video to the paper presented at the AAAI-23 Conference <br/><img src='/images/AAAI海报.png'>"
 collection: portfolio
 ---
 
