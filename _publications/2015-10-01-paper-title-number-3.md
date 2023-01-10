@@ -11,5 +11,3 @@ citation: ''
 Congratulations to myself! It is my first academic paper as the first author. It was submitted to AAAI in the summer vacation of my sophomore year and has been accepted.
 
 [Download paper here](https://arxiv.org/abs/2211.15162)
-
-Recommended citation: .
