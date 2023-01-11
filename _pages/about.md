@@ -15,7 +15,7 @@ I won the **National Scholarship** in 2021, the first-class scholarship for acad
 😀 News
 ======
 - 2023.01: **My paper *"Long-tail Cross Modal Hashing"* has been accepted by AAAI as an oral presentation paper!**
-- 2022.12: I won **the first place** in the parallel computing competition
+- 2022.12: I won **the first place** in the parallel computing competition.
 - 2022.11: **My first academic paper as the first author *"Long-tail Cross Modal Hashing"* has been accepted by AAAI (CCF A) 2023!**
 
 📑 Publications
