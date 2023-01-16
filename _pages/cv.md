@@ -8,3 +8,4 @@ redirect_from:
 ---
 
 * [Download here](http://zjgao02.github.io/files/高子俊简历.pdf)
+
