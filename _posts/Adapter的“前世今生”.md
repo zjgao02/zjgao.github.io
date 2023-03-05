@@ -19,7 +19,7 @@
 
 - 最早的（据我所知）提出adapter的是17年发表在NIPS上的在CV领域的工作**《Learning multiple visual domains with residual adapters》**，而后在19年google research在ICML发表的工作**《Parameter-Efficient Transfer Learning for NLP》**将此模型引入到NLP中，利用transformer为基本架构，插入adapter实现，模型框架图如下：
 
-  <img src="C:\Users\HP\AppData\Roaming\Typora\typora-user-images\image-20230305155141129.png" alt="image-20230305155141129" style="zoom:80%;" />
+  <img src=".\image-20230305155141129.png" alt="image-20230305155141129" style="zoom:80%;" />
 
   其实就是在Multi-head attention和2层FFN层后都加了一个adapter。至于adapter的结构，就是向下投射到一个较小维度，经过一层非线性激活函数，然后向上投射到原有的维度。另外，整个adapter层的输入和输出之间还有一个残差连接。这一类的adapter也被形象地称作bottleneck adapter。
 
@@ -45,7 +45,7 @@
 
   - Motivation：想要结合来自多个任务的知识，传统的两个方法是sequential fine-tuning或multi-task learning。前者的一大问题是需要先验知识来确定顺序，且模型容易遗忘之前任务学到的知识，后者的问题是不同的任务互相影响，也难以平衡数据集大小差距很大的任务。Adapter的一个优势是不用更新预训练模型的参数，而是插入比较少的新的参数就可以很好地学会一个任务。此时，adapter的参数某种程度上就表达了解决这个任务需要的知识。受此启发，AdapterFusion提出如果想要把来自多个任务的知识结合起来，就可以考虑把多个任务的adapter的参数结合起来。于是它的模型框架如下：
 
-  <img src="C:\Users\HP\AppData\Roaming\Typora\typora-user-images\image-20230305170002146.png" alt="image-20230305170002146" style="zoom:80%;" /><img src="C:\Users\HP\AppData\Roaming\Typora\typora-user-images\image-20230305170124331.png" style="zoom:80%;" />
+  <img src=".\image-20230305170002146.png" alt="image-20230305170002146" style="zoom:80%;" /><img src=".\image-20230305170124331.png" style="zoom:80%;" />
 
   - 训练过程：该模型是two-stage的，第一阶段需要针对于每个任务，学习一组新的adapter参数；第二阶段对某个特定目标任务，学习一个融合模块把第一步的所有adapter结合起来。和第一篇工作比起来，它摘掉了多头注意力之后的adapter, 只保留了最上面的adapter，而且在其后加入fusion模块。而fusion其实就是个注意力模块：Q是原来transformer层中全连接层的输出，K和V都是各个任务对应的adapter的输出。
   - 结论：
@@ -56,11 +56,11 @@
 
 - 而对于缺点二，引入adapter在推理阶段速度的drop引起了研究者们的研究兴趣，于是21EMNLP上有篇工作**AdapterDrop**就探讨了这个问题并研究了adapter如何剪枝以进一步提升效率。该工作首先评估了adapter的训练和推理速度，发现adapter的训练很有优势：会比整个模型微调快60%左右，而推理仍然不足：会比使用原模型慢4%-6%。结果如下表：
 
-  <img src="C:\Users\HP\AppData\Roaming\Typora\typora-user-images\image-20230305172612046.png" alt="image-20230305172612046" style="zoom:80%;" />
+  <img src=".\image-20230305172612046.png" alt="image-20230305172612046" style="zoom:80%;" />
 
   为了解决上述inference慢的问题，作者结合了第一个工作的结论三，也就是之前说的挖的坑设计了剪枝模型，模型框架如下：
 
-  ![image-20230305173333458](C:\Users\HP\AppData\Roaming\Typora\typora-user-images\image-20230305173333458.png)
+  ![image-20230305173333458](.\image-20230305173333458.png)
 
   - 分析：中间的模型就是正常的adapter的训练范式，而最右边的是作者提出的。可以看到，作者把靠近输入端的adapter剪掉了
 
@@ -68,7 +68,7 @@
 
   - 作者进一步结合了AdapterFusion的工作，探讨了如何加速多任务融合的推理速度，框架如下图：
 
-    ![image-20230305173949480](C:\Users\HP\AppData\Roaming\Typora\typora-user-images\image-20230305173949480.png)
+    ![image-20230305173949480](.\image-20230305173949480.png)
 
     - method 1:去除掉前几个AF层，对性能的影响不同的任务有所不同。但这明显不具有足够的泛化性
 
@@ -82,7 +82,7 @@
 
   - 具体做法：将adapter的参数表达为nxn的矩阵A和一个(k/n)x(d/n)的矩阵B的Kronecker积。A作为slow的general information跨任务共享，而B作为fast的adapter-specific information。B可以再次被分解为秩1的向量相乘，进一步把time complexity减少到O(k+d).模型框架如下：
 
-    ![image-20230305215214019](C:\Users\HP\AppData\Roaming\Typora\typora-user-images\image-20230305215214019.png)
+    ![image-20230305215214019](.\image-20230305215214019.png)
 
   - 实验结果：
 
@@ -100,9 +100,9 @@
 
   - K-Adapter通过并行的 Adapter 层来获得不同类型的知识信息，最后通过 concatenate 来输出，互不影响。模型的框架如下：
 
-    ![image-20230305222315880](C:\Users\HP\AppData\Roaming\Typora\typora-user-images\image-20230305222315880.png)。
+    ![image-20230305222315880](.\image-20230305222315880.png)。
 
-    ![image-20230305222353926](C:\Users\HP\AppData\Roaming\Typora\typora-user-images\image-20230305222353926.png)
+    ![image-20230305222353926](.\image-20230305222353926.png)
 
     可以看到K-Adapter不再改动原有的transformer，而是变成在两个transformer层之间插入adapter层。每个adapter层内，在向下和向上project的全连接层之间加入了两层transformer层，目的是增加模块的表达能力。每个adapter层的输入可以看到上一个adapter和邻近的上一个transformer层的输出。Concatenate 前一 Adapter 的输出和当前层 Transformer 的输出作为当前 Adapter 的输入，单个 knowledge task 的输出是最后一个 Adapter 的输出和最后一个 Transformer 输出 Concatenate 在一起。
 
@@ -118,7 +118,7 @@
 
   - 原理：使用hypernetwork生成adapter两个映射矩阵的参数。Hypernetwork接收任务id和层id的输入，输出对于某个任务在某一层对应的adapter参数。模型示意图如下：
 
-    ![image-20230305235209154](C:\Users\HP\AppData\Roaming\Typora\typora-user-images\image-20230305235209154.png)<img src="C:\Users\HP\AppData\Roaming\Typora\typora-user-images\image-20230305235243434.png" alt="image-20230305235243434" style="zoom:80%;" />
+    ![image-20230305235209154](.\image-20230305235209154.png)<img src=".\image-20230305235243434.png" alt="image-20230305235243434" style="zoom:80%;" />
 
     基于任务嵌入，超参数网络为dp up过程学习两个参数U,D；相似地为layer norm也分配两个参数
 
