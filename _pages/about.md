@@ -24,7 +24,7 @@ I won the **National Scholarship** in 2021, the first-class scholarship for acad
 
 # 💝 Hobbies
 
-- I like playing musical instruments, especially the guitar🎷. I got a Level 7 certificate in guitar. My favorite types of music are hip-hop and jazz💤.
+- I like playing musical instruments, especially the guitar🎸. I got a Level 7 certificate in guitar. My favorite types of music are hip-hop and jazz💤.
 - I like to try many kinds of sports, especially basketball🏀. I play basketball in an elegant style like my favorite basketball star Paul George.
 
 📪 For more info

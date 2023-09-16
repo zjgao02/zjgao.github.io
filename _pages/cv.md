@@ -7,5 +7,5 @@ redirect_from:
   - /resume
 ---
 
-* [Download here](http://zjgao02.github.io/files/高子俊简历.pdf)
+* [Download here](http://zjgao02.github.io/files/Zijun_Gao_Resume.pdf)
 
